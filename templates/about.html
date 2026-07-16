@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding-top: 80px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #666;
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            display: inline-block;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #667eea;
+        }
+
+        a.back {
+            display: inline-block;
+            margin-top: 20px;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a.back:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+    </nav>
+
+    <div class="container">
+        <h1>About This Website</h1>
+        <p>
+            This is a simple website built with <strong>Python Flask</strong>, 
+            a lightweight web framework that makes it easy to create web applications.
+        </p>
+        <p>
+            Flask is great for:
+        </p>
+        <ul style="margin-left: 20px; color: #666;">
+            <li>Learning web development</li>
+            <li>Building simple to medium-sized websites</li>
+            <li>Creating REST APIs</li>
+            <li>Rapid prototyping</li>
+        </ul>
+        <p style="margin-top: 20px;">
+            You can customize this website by editing the HTML files in the 
+            <code>templates/</code> folder and adding Python routes in <code>app.py</code>.
+        </p>
+        <a href="/" class="back">← Back to Home</a>
+    </div>
+</body>
+</html>
